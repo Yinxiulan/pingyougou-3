@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script>
+ function login(){
+            // 检测：http://127.0.0.1:8080/login.html
+            // uname:dingding upwd:123456
+            var _uname=uname.value;
+            var _upwd=upwd.value;
+            //非空验证
+            if(!_uname){
+                alert("用户名不能为空");
+                return;
+            }
+            if(!_upwd){
+                alert("密码不能为空");
+                return ;
+            }
+            //创建异步对象
+            var xhr=new XMLHttpRequest();
+            //创建监听
+            xhr.onreadystatechange=function(){
+                if(xhr.readyState==4&&xhr.status==200){
+                    var r=xhr.responseText;
+                    if(r=='{"success":true}'){
+                       d1.innerHTML="登录成功";
+                    //    当登录成功跳转到用户列表
+                    alert("登录成功");
+                      // location.href="register.html";
+                    }else{
+                        d1.innerHTML="用户名密码错误";
+                    }
+                }
+            }
+            //打开连接
+            xhr.open("get","/pro/v1/login/"+_uname+"&"+_upwd,true);
+            //发送请求
+            xhr.send();
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <div class="w">
+        <div class="header">
+            <div class="logo">
+                <a href="index.html"> <img src="../img/logo.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="login">
+        <div class=" login_area w">
+            <div class="login_form">
+
+                <div class="login_form_hd">
+                    <ul>
+                        <li>扫描登录</li>
+                        <li class="current">账号登录</li>
+                    </ul>
+                </div>
+
+                <div class="login_form_bd">
+                    <div class="login_name">
+                        <span class="add"></span>
+                        <input type="text" placeholder="用户名/邮箱" id="uname">
+                    </div>
+                    <div class="login_pwd">
+                        <span class="add"></span>
+                        <input type="text" placeholder="请输入密码" id="upwd">
+                    </div>
+                    <div class="setting">
+                        <input type="checkbox" name="" id="">
+                        自动登录
+                        <span class="forget">忘记密码？</span>
+                    </div>
+                    <button class="logined" onclick="login()">
+                        登&nbsp;&nbsp;录
+                    </button>
+                    <div id="d1"></div>
+                    <div class="registion">
+                        <ul>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                        <a href="register.html">立即注册</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer w">
+        <ul>
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">联系客服</a></li>
+            <li><a href="#">商家入驻</a></li>
+            <li><a href="#">营销中心</a></li>
+            <li><a href="#">手机品优购</a></li>
+            <li><a href="#">销售联盟</a></li>
+            <li><a href="#">品优购社区</a></li>
+            <li><a href="#">品优购公益</a></li>
+            <li><a href="#">English Site</a></li>
+            <li><a href="#">Contact U</a></li>
+        </ul>
+        <div class="address">地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100</div>
+        <div class="beian">京ICP备08001421号京公网安备110108007702
+        </div>
+    </div>
+    
+    
+    
+    
+    
+</body>
+
+</html>

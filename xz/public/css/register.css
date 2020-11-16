@@ -1,0 +1,126 @@
+.w{
+    width: 1200px;
+    margin: 0 auto;
+}
+.header{
+    height: 82px;
+    border-bottom: 2px solid #b1191a;
+}
+.logo{
+    padding-top: 15px;
+}
+.register_area{
+    height: 520px;
+    border:1px solid #ccc;
+    margin-top: 30px;
+}
+.register_area h3{
+    height: 40px;
+    line-height: 40px;
+    padding:0 10px;
+    font-weight: 400;
+    background-color: #ececec;
+    border-bottom: 1px solid #ccc;
+    font-size: 18px;
+}
+.register_area h3 em{
+    float: right;
+    font-size: 14px;
+}
+.register_area a{
+    color:#c81623;
+}
+.reg_form{
+    width:600px;
+    height:350px;
+    /* background-color: pink; */
+    margin:35px auto 0;
+}
+.reg_form li{
+    margin-bottom: 15px;
+}
+.reg_form label{
+    /* label为行内元素 */
+    display: inline-block;
+    width:100px;
+    height:36px;
+    line-height: 36px;
+    text-align: right;
+}
+.reg_form .inp{
+    width: 238px;
+    height: 34px;
+    border:1px solid #ccc;
+    margin-left: 10px;
+}
+.error{
+    color:#df3033;
+}
+.success_icon,
+.error_icon{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url() no-repeat;
+    /* 让文字与图片居中 */
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-left: 10px;
+}
+.success_icon{
+    background: url() no-repeat;
+}
+.success{
+    color: #40b83f;
+    margin-left: 10px;
+}
+.safe{
+    padding-left: 187px;
+    color:#b2b2b2;
+}
+.safe em{
+    padding:0 12px;
+    color: #fff;
+}
+.ruo{
+    background-color: #de1111;
+}
+.zhong{
+    background-color: #40b83f;
+}
+.qiang{
+    background-color: #f79100;
+}
+.agree{
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.agree input{
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.agree a{
+    color:#1ba1e6;
+}
+.over{ 
+     width:200px; 
+     height:34px; 
+     margin: 30px 0 0 130px; 
+     background-color: #c81623;  
+     border:0; 
+     color: #fff; 
+     font-size: 14px; 
+ } 
+.footer{
+     height:120px; 
+    /* background-color: #f5f5f5; */
+    padding-top: 20px;
+    text-align: center;
+}
+.mod_copyright_links{
+    height: 30px;
+    margin:20px 0 15px 0;
+}
+.mod_copyright_info{
+    line-height: 20px;
+}

@@ -1,0 +1,178 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 82px;
+    /* border-bottom: 2px solid #b1191a; */
+}
+
+.logo {
+    padding-top: 15px;
+}
+
+.login_area {
+    position: relative;
+    height: 487px;
+    background: url(../../img/loginbg.png) no-repeat;
+    margin: 0 auto;
+}
+
+.login {
+    height: 487px;
+    background-color: #7e00ff;
+}
+
+.login_form {
+    position: absolute;
+    width: 350px;
+    height: 42px;
+    right: 0;
+    top: 80px;
+    background-color: #fff;
+}
+
+.login_form_hd {
+    height: 42px;
+}
+
+.login_form_hd li {
+    float: left;
+    width: 173px;
+    line-height: 42px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #ccc;
+}
+
+.login_form_hd .current {
+    border-bottom: 0;
+    background-color: #fff;
+    color: #c81623;
+}
+
+.login_form_bd {
+    width: 290px;
+    background-color: #fff;
+    height: 315px;
+    padding: 0 30px;
+}
+
+.login_name .add {
+    display: inline-block;
+    width: 37px;
+    height: 34px;
+    background-color: #ccc;
+    background-image: url(../../img/icons.png);
+    background-position: -10px -201px;
+    vertical-align: middle;
+    margin-right: -4px;
+    margin-top: -4px;
+}
+
+.login_pwd span {
+    display: inline-block;
+    width: 37px;
+    height: 34px;
+    background-color: #ccc;
+    background-image: url(../../img/icons.png);
+    background-position: -72px -201px;
+    vertical-align: middle;
+    margin-right: -4px;
+    margin-top: -4px;
+}
+
+.login_pwd input, .login_name input {
+    width: 240px;
+    height: 30px;
+    margin-top: 25px;
+    line-height: 30px;
+    padding-left: 5px;
+}
+
+.setting {
+    margin: 25px 0 25px;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.setting input {
+    vertical-align: middle;
+}
+
+.forget {
+    float: right;
+    cursor: pointer;
+}
+
+.logined a {
+    display: block;
+    width: 290px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #c81623;
+    color: #fff;
+}
+
+.registion {
+    height: 34px;
+    margin: 25px 0;
+}
+
+.registion li {
+    float: left;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.registion li a {
+    display: block;
+    width: 34px;
+    height: 34px;
+    background: url(../../img/regetype.png) no-repeat -18px -7px;
+}
+
+.registion li:nth-child(2) a {
+    background-position: -70px -7px;
+}
+
+.registion li:nth-child(3) a {
+    background-position: -122px -7px;
+}
+
+.registion li:nth-child(4) a {
+    background-position: -175px -7px;
+}
+
+.registion a {
+    line-height: 34px;
+    color: #28a3ef;
+    float: right;
+}
+
+.footer {
+    text-align: center;
+    line-height: 24px;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 0 20px;
+    border-right: 1px solid #e4e4e4;
+    list-style-type: none;
+    *display: inline;
+    *zoom: 1;
+}
+
+.copyright ul li:last-child {
+    border-right: 0;
+}
